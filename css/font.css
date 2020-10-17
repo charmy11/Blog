@@ -1,9 +1,9 @@
 @font-face {
     font-family: Cabin;
-    src: url("../fonts\ styles/Cabin")
+    src: url("../fontSstyles/Cabin/Cabin-Italic-VariableFont_wdth\,wght.ttf")
 }
 
 @font-face {
     font-family: hind;
-    src: url("../fonts\ styles/");
+    src: url("../fontSstyles/Hind_Siliguri/HindSiliguri-Medium.ttf")
 }
