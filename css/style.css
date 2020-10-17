@@ -1,0 +1,62 @@
+html,
+body {
+    margin: 0%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/*------navbar-----*/
+
+.nav {
+    background-color: white;
+    padding: 0.4rem;
+    min-height: 10vh;
+    overflow: hidden;
+}
+
+.flex-class {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-brand .a {
+    display: block;
+    padding-top: 2rem;
+}
+
+a {
+    font-size: 1.6rem;
+    padding: 1rem 0;
+    text-decoration: none;
+}
+
+.nav-items {
+    list-style: none;
+    display: flex;
+    position: relative;
+}
+
+.blogger a {
+    display: block;
+}
+
+.nav-items .item {
+    padding: 0 1rem;
+}
+
+.social-items {
+    display: flex;
+}
+
+.social-items .sitem {
+    padding: 0 1rem;
+}
+
+
+/*----navbar----*/
