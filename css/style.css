@@ -1,9 +1,10 @@
 @import url("../css/font.css");
+@import url("../css/all.css");
 html,
 body {
     margin: 0%;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 :root {
@@ -32,10 +33,9 @@ li {
 
 a {
     font-size: 1.6rem;
-    padding: 1rem 0;
+    /* padding: 1rem 0; */
     font-family: Cabin;
     text-decoration: none;
-    color: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%);
 }
 
 .blogger {
@@ -43,29 +43,50 @@ a {
     padding-top: 0.2rem;
     font-family: hind;
     font-size: 1.6rem;
-    color: midnightblue;
+    color: green;
+}
+
+.toggle-main {
+    position: absolute;
+    width: 90%;
+    /* top: 0%; */
+    cursor: pointer;
+    display: none;
+}
+
+.toggle-icons {
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.7rem 0;
+    font-size: 1.8rem;
+    color: gray;
+    /* display: none; */
 }
 
 .nav-items {
     list-style: none;
     display: flex;
-    position: relative;
 }
 
-.blogger a {
-    display: block;
+.nav-items .item a:hover {
+    background-color: midnightblue;
+    color: white;
 }
 
 .nav-brand a {
     font-size: 3rem;
 }
 
-.item a {
+.nav-items .item a {
     padding: 0 1rem;
     font-family: hind;
-    font-size: 1.1rem;
-    color: linear-gradient(120deg, #fbc2eb 0%, #a6c1ee 100%);
+    font-size: 1.3rem;
+    color: gray;
     font-weight: bold;
+}
+
+.item a :hover {
+    color: black;
 }
 
 .social-items {
@@ -73,9 +94,36 @@ a {
 }
 
 .social-items .sitem a {
-    padding: 0 1rem;
+    padding: 0 0.3rem;
     font-family: cursive;
+    color: black;
 }
+
+.nav {
+    padding-right: 3rem;
+    padding-left: 1.1rem;
+    max-height: 100vh;
+    overflow: hidden;
+}
+
+@media only screen and (max-width:750px) {
+    .nav {
+        max-height: 10vh;
+        overflow: hidden;
+    }
+    .nav .flex-class {
+        flex-direction: column;
+    }
+    .nav-items {
+        flex-direction: column;
+    }
+    .toggle-main {
+        display: initial;
+    }
+}
+
+
+/* @media only screen and (max-width:484px) {} */
 
 
 /*----navbar----*/
